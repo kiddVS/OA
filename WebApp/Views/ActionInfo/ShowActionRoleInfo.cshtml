@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+@using CUP.PE.OA.Model
+@{ 
+    ActionInfo actionInfo = ViewBag.ActionInfo;
+    List<int> RoleInActionList = ViewBag.RoleInAction;
+    List<RoleInfo> AllRoles = ViewBag.AllRoles;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowActionRoleInfo</title> 
+    <script src="~/Content/JQueryEasyUI1.2.2/jquery-1.4.4.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript">
+        function submitSetRole4AcitonForm() {
+            $("#SetRole4ActionForm").submit();
+        }
+        function afterSetRole4Action(data) {         
+            window.parent.afterSetRole4Action(data);           
+        }
+    </script>
+</head>
+<body>
+    <div> 
+        为 @actionInfo.ActionInfoName 权限设置角色信息
+        @using (Ajax.BeginForm("SetRole4Action", "ActionInfo", new { },
+            new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterSetRole4Action" }, new { id = "SetRole4ActionForm" }))
+        {
+            <input type="hidden" name="ID" value="@actionInfo.ID" />
+            foreach (var item in AllRoles)
+            {
+                string checkName = "pe_" + item.ID;
+                if (RoleInActionList.Contains(item.ID))
+                {
+                    <input type="checkbox" checked="checked" name="@checkName" />@item.RoleName<br />
+                }
+                else
+                {
+                    <input type="checkbox"  name="@checkName" />@item.RoleName<br />
+                }
+            }
+        }
+    </div>
+</body>
+</html>

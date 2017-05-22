@@ -1,0 +1,250 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/JQueryEasyUI1.2.2/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/JQueryEasyUI1.2.2/themes/icon.css" rel="stylesheet" />
+    <script src="~/Content/JQueryEasyUI1.2.2/jquery-1.4.4.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Content/JQueryEasyUI1.2.2/jquery.easyui.min.js"></script>
+    <script src="~/Content/JQueryEasyUI1.2.2/locale/easyui-lang-zh_CN.js"></script>
+    <script src="~/Scripts/datapattern.js"></script>
+    <script>
+        $(function () {
+            $("#addDv").css("display", 'none');
+            $("#editDv").css("display", 'none');
+            //$("#btnSearch").click(function () {
+            //    var searchUName = $("#txtSearchName").val();
+            //    var searchRemark = $("#txtSearchRemark").val();
+            //    var searchJson = { "searchUName": searchUName, "searchRemark": searchRemark };
+            //    loadData(searchJson)
+            //})
+            loadData()
+        });
+        function loadData() {
+            $('#tt').datagrid({
+                url:'/RoleInfo/GetRoleInfo',
+                title: '角色数据表格',
+                width: 800,
+                height: 400,
+                fitColumns: true,
+                nowrap: false,
+                idField: 'ID',
+                loadMsg: '正在加载角色数据。。。。',
+                pagination: true,
+                singleSelect: false,
+                pageSize: 5,
+                pageNumber: 1,
+                pageList: [5, 10, 15],
+                queryParams: {},
+                columns: [[
+                    { field: 'ck', checkbox: true, align: 'left', width: 50 },
+                    { field: 'ID', title: '编号', width: 80 },
+                    { field: 'RoleName', title: '角色名', width: 120 },                 
+                    { field: 'Remark', title: '备注', width: 160 },
+                    {
+                        field: 'SubTime', title: '时间', width: 100, align: 'right',
+                        formatter: function (value, row, index) {
+                            return (eval(value.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd ");
+                        }
+                    }
+                ]],
+                toolbar: [{
+                    id: 'btnadd',
+                    text: '添加',
+                    iconCls: 'icon-add',
+                    handler: function () {
+                        showAddDialog();
+                    }
+                }, {
+                    id: 'btncut',
+                    text: '删除',
+                    iconCls: 'icon-cancel',
+                    handler: function () {
+                        deleteRoleInfo();
+                    }
+                }, '-', {
+                    id: 'btnedit',
+                    text: '修改',
+                    iconCls: 'icon-redo',
+                    handler: function () {
+                        showEditDialog();
+                    }
+                }]
+            })
+        }
+        function deleteRoleInfo() {
+            var selectRows = $("#tt").datagrid("getSelections");
+            if ( selectRows.length != 0) {
+                $.messager.confirm("提示", "确定要删除吗？", function (i) {
+                    if (i) {
+                        var IDS = "";
+                        for (var i = 0; i < selectRows.length; i++) {
+                            IDS += selectRows[i].ID + ",";
+                        }
+                        IDS = IDS.substr(0, IDS.length - 1);
+                        $.post("/RoleInfo/DeleteRoleInfo", { "IDS": IDS }, function (data) {
+                            if (data == "Y") {
+                                $.messager.alert("提示", "删除成功！")
+                                $('#tt').datagrid('reload')
+                                $('#tt').datagrid("clearSelections")
+                            }
+                            else {
+                                $.messager.alert("提示", "删除失败！")
+                            }
+                        })
+                    }
+                })
+            }
+            else {
+                $.messager.alert("提示", "请选择需要删除的数据！")
+                return;
+            }
+        }
+        function showAddDialog()
+        {
+            $("#addDv").css("display", "block");
+            $("#addDv").dialog({
+                title: '添加角色数据',
+                modal: true,
+                collapsible: true,
+                resizable:true,
+                buttons: [{
+                    text: '确认',
+                    iconCls: 'icon-ok',
+                    handler: function () {
+                        $("#addForm").submit();
+                    }
+                }, {
+                    text: '取消',
+                    handler: function () {
+                        $('#addDv').dialog('close');
+                    }
+                }]
+            })
+        }
+        function afterAdd(data) {
+            if (data=='Y') {
+                $.messager.alert("提示", "角色添加成功！")
+                $('#addDv').dialog('close')
+                $('#tt').datagrid('reload')
+                $("#addDv input").val("")
+
+            }
+        }
+        function showEditDialog() {
+            var selectedRow = $("#tt").datagrid("getSelections");
+            if (selectedRow.length!=1) {
+                $.messager.alert("提示", "请选择一条需要修改的数据！")
+                return;
+            }
+            $("#editIframe").attr("src", "/RoleInfo/GetEditRoleInfo?ID=" + selectedRow[0].ID);
+            //$.post("/RoleInfo/GetEditRoleInfo", { ID: selectedRow[0].ID }, function (data) {
+            //    $("#txtUName").val(data.UName);
+            //    $("#txtUPwd").val(data.UPwd);
+            //    $("#txtRemark").val(data.Remark);
+            //    $("#txtSort").val(data.Sort);
+            //    $("#txtUName").val(data.UName);
+            //    $("#txtID").val(data.ID);
+            //    $("#txtSubTime").val(ChangeDateFormat(data.SubTime));
+            //    $("#txtDelFlag").val(data.DelFlag);
+            $("#editDv").css("display", "block");
+            $("#editIframe").css("display", "block");
+                $("#editDv").dialog({
+                    title: '修改角色数据',
+                    modal: true,
+                    collapsible: true,
+                    resizable: true,
+                    buttons: [{
+                        text: '确认',
+                        iconCls: 'icon-ok',
+                        handler: function () {
+                            $("#editIframe")[0].contentWindow.submitEditForm();
+                        }
+                    }, {
+                        text: '取消',
+                        handler: function () {
+                            $('#editDv').dialog('close');
+                        }
+                    }]
+                })
+            //})
+        }
+        function afterEdit(data) {
+            if (data=="Y") {
+                $.messager.alert("提示", "用户更新成功！")
+                $('#editDv').dialog('close');
+                $("#tt").datagrid("reload");
+            }
+        }
+        function ChangeDateFormat(cellval) {
+            var date = new Date(parseInt(cellval.replace("/Date(", "").replace(")/", ""), 10));
+            var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+            var currentDate = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+            return date.getFullYear() + "-" + month + "-" + currentDate;
+        }
+        function closeEditDiv()
+        {
+            $('#editDv').dialog('close');
+        }
+    </script>
+</head>
+<body>
+    <div>        
+        <table id="tt"></table>
+    </div>
+    <div id="addDv" icon="icon-save" style="padding:5px;width:320px;height:250px;">
+        @using (Ajax.BeginForm("AddRoleInfo", "RoleInfo", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterAdd" },
+                          new { id = "addForm" }))
+        {
+            <table>
+                <tr>
+                    <td><p style="font-size:14px">角色名：</p></td>
+                    <td><input type="text" name="RoleName" /></td>
+                </tr>                
+                <tr>
+                    <td><p style="font-size:14px">备注：</p></td>
+                    <td><input type="text" name="Remark" /></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size:14px">排序：</p></td>
+                    <td><input type="text" name="Sort" /></td>
+                </tr>
+            </table>
+        }
+    </div>   
+    <div id="editDv" icon="icon-save" style="padding:5px;width:320px;height:250px;">
+        <iframe id="editIframe" style="display:none" frameborder="0" scrolling="no"></iframe>
+        @*@using (Ajax.BeginForm("EditUserInfo", "UserInfo", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterEdit" },
+                         new { id = "editForm" }))
+        {
+            <input type="hidden" name="SubTime" id="txtSubTime" />
+            <input type="hidden" name="ID" id="txtID" />
+            <input type="hidden" name="DelFlag" id="txtDelFlag" />
+            <table>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" name="UName" id="txtUName" /></td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td><input type="password" name="UPwd" id="txtUPwd" /></td>
+                </tr>
+                <tr>
+                    <td>备注：</td>
+                    <td><input type="text" name="Remark" id="txtRemark" /></td>
+                </tr>
+                <tr>
+                    <td>排序：</td>
+                    <td><input type="text" name="Sort" id="txtSort" /></td>
+                </tr>
+            </table>
+        }*@
+    </div>
+</body>
+</html>

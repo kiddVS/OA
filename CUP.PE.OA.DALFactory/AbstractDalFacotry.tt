@@ -1,0 +1,54 @@
+﻿<#@ template language="C#" debug="false" hostspecific="true"#>
+<#@ include file="EF.Utility.CS.ttinclude"#><#@
+ output extension=".cs"#>
+ 
+<#
+
+CodeGenerationTools code = new CodeGenerationTools(this);
+MetadataLoader loader = new MetadataLoader(this);
+CodeRegion region = new CodeRegion(this, 1);
+MetadataTools ef = new MetadataTools(this);
+
+string inputFile =@"..\\CUP.PE.OA.Model\\Model1.edmx";
+
+EdmItemCollection ItemCollection = loader.CreateEdmItemCollection(inputFile);
+string namespaceName = code.VsNamespaceSuggestion();
+
+EntityFrameworkTemplateFileManager fileManager = EntityFrameworkTemplateFileManager.Create(this);
+
+#>
+
+using CUP.PE.OA.IDAL;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CUP.PE.OA.DALFactory
+{
+    public partial  class AbstractFactory
+    {
+      private static readonly string _nameSpace = ConfigurationManager.AppSettings["NameSpace"];
+        private static readonly string _assemblyPath = ConfigurationManager.AppSettings["AssemblyPath"];
+   
+<#
+foreach (EntityType entity in ItemCollection.GetItems<EntityType>().OrderBy(e => e.Name))
+{    
+#>		
+	    public static I<#=entity.Name#>DAL Get<#=entity.Name#>Instance()
+        {
+
+            string fullClassName = _nameSpace + ".<#=entity.Name#>DAL";
+
+
+            //object obj = Assembly.Load(ConfigurationManager.AppSettings["DalAssembly"]).CreateInstance(classFulleName, true);
+            return GetObjectInstance(fullClassName) as I<#=entity.Name#>DAL;
+        }
+<#}#>
+
+	}
+	
+}

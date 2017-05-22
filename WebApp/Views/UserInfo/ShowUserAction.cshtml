@@ -1,0 +1,128 @@
+﻿
+@{
+    Layout = null;
+}
+@using CUP.PE.OA.Model;
+@{
+    UserInfo userInfo = ViewBag.UserInfo;
+    List<R_UserInfo_ActionInfo> userExistAction = ViewBag.UserExistAction;
+    List<ActionInfo> allActionInfo = ViewBag.AllActionInfo;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowUserAction</title>
+    <link href="~/Content/tableStyle.css" rel="stylesheet" />
+    <link href="~/Content/JQueryEasyUI1.2.2/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/JQueryEasyUI1.2.2/themes/icon.css" rel="stylesheet" />
+    <script src="~/Content/JQueryEasyUI1.2.2/jquery-1.4.4.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Content/JQueryEasyUI1.2.2/jquery.easyui.min.js"></script>
+    <script src="~/Content/JQueryEasyUI1.2.2/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".submitInfo").click(function () {
+                var $element = $(this);
+                $.post("/UserInfo/SetAction4User", { UserId:@userInfo.ID,ActionID: $element.attr("IDS"), Type: $element.val() }, function(data) {
+                    if (data == "1") {
+                        $.messager.show({
+                            title: '提示',
+                            msg: '设置权限成功！',
+                            timeout: 2000,
+                            showType: 'slide'
+                        });
+                    } else if (data == "0") {
+                        $.messager.show({
+                            title: '提示',
+                            msg: '设置权限失败！',
+                            timeout: 2000,
+                            showType: 'slide'
+                        });
+                    }
+                    else if (data == "2") {
+                        $element.parent().find("input").removeAttr("checked");
+                        $.messager.show({
+                            title: '提示',
+                            msg: '清除权限成功！',
+                            timeout: 2000,
+                            showType: 'slide'
+                        });
+
+                    }
+                })
+            })
+        })
+       
+    </script>
+</head>
+<body>
+    <div>
+        为用户 @userInfo.UName 设置权限信息
+        <table>
+            <tr>
+                <th>权限编号</th>
+                <th>权限名称</th>
+                <th>请求地址</th>
+                <th>请求方式</th>
+                <th>操作</th>
+            </tr>
+            @{
+                foreach (var item in allActionInfo)
+                {
+
+                    string radioName = "pe_" + item.ID;
+                    string noRadioName = "Npe_" + item.ID;
+                    <tr>
+                        <td>@item.ID</td>
+                        <td>@item.ActionInfoName</td>
+                        <td>@item.Url</td>
+                        <td>@item.HttpMethod</td>
+                     @{   var isExt = (from u in userExistAction
+                        where u.ActionInfoID == item.ID
+                        select u).FirstOrDefault();
+                        if (isExt != null)
+                        {
+                        if (isExt.IsPass == true)
+                        {
+
+                        <td>
+                            <label for="@radioName">允许</label>
+                            <input class="submitInfo" type="radio" checked="checked" id="@radioName" name="@radioName" IDS="@item.ID" value="Y" />
+                            <label for="@noRadioName">禁止</label>
+                            <input class="submitInfo" type="radio" id="@noRadioName" name="@radioName" IDS="@item.ID" value="N" />
+                            <button class="submitInfo" value="F" IDS="@item.ID">清除</button>
+                        </td>
+
+                        }
+                        else
+                        {
+
+                        <td>
+                            <label for="@radioName">允许</label>
+                            <input class="submitInfo" type="radio" id="@radioName" name="@radioName" IDS="@item.ID" value="Y" />
+                            <label for="@noRadioName">禁止</label>
+                            <input class="submitInfo" type="radio" id="@noRadioName" checked="checked" name="@radioName" IDS="@item.ID" value="N" />
+                            <button class="submitInfo" value="F" IDS="@item.ID">清除</button>
+                        </td>
+                        }
+                        }
+                        else
+                        {
+                        <td>
+                            <label for="@radioName">允许</label>
+                            <input class="submitInfo" type="radio" id="@radioName" name="@radioName" IDS="@item.ID" value="Y" />
+                            <label for="@noRadioName">禁止</label>
+                            <input class="submitInfo" type="radio" id="@noRadioName" name="@radioName" IDS="@item.ID" value="N" />
+                            <button class="submitInfo" value="F" IDS="@item.ID">清除</button>
+                        </td>
+                         }
+                        }
+                    </tr>
+                  }
+            }
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\CUP.PE.OA.Model.dll.config
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\CUP.PE.OA.Model.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\CUP.PE.OA.Model.pdb
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.csprojResolveAssemblyReference.cache
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\CUP.PE.OA.Model.dll.config
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\CUP.PE.OA.Model.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\CUP.PE.OA.Model.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.xml
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.csprojResolveAssemblyReference.cache
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\Newtonsoft.Json.xml

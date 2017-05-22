@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+@using CUP.PE.OA.Model;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetEditRoleInfo</title>     
+    <script src="~/Content/JQueryEasyUI1.2.2/jquery-1.4.4.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script> 
+    <script src="~/Content/JQueryEasyUI1.2.2/jquery.easyui.min.js"></script>
+    <script src="~/Content/JQueryEasyUI1.2.2/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript">
+        function submitEditForm() {
+            $("#editForm").submit();
+        }
+        function afterEdit(data) {
+            if (data="Y") {
+                window.parent.closeEditDiv();
+                window.parent.loadData();
+            }            
+        }
+    </script>
+</head>
+<body>
+    <div>  
+        @using (Ajax.BeginForm("EditRoleInfo", "RoleInfo", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterEdit" }, new { id = "editForm" }))
+        {
+            <input type="hidden" name="SubTime" id="txtSubTime" value="@ViewBag.RoleInfo.SubTime" />
+            <input type="hidden" name="ID" id="txtID" value="@ViewBag.RoleInfo.ID"/>
+            <input type="hidden" name="DelFlag" id="txtDelFlag" value="@ViewBag.RoleInfo.DelFlag"/>
+            <table>
+                <tr>
+                    <td><p style="font-size:14px">角色名：</p></td>
+                    <td><input type="text" name="RoleName" id="RoleName" value="@ViewBag.RoleInfo.RoleName"/></td>
+                </tr>                
+                <tr>
+                    <td><p style="font-size:14px">备注：</td>
+                    <td><input type="text" name="Remark" id="txtRemark" value="@ViewBag.RoleInfo.Remark"/></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size:14px">排序：</td>
+                    <td><input type="text" name="Sort" id="txtSort" value="@ViewBag.RoleInfo.Sort" /></td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>

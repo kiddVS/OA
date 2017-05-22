@@ -1,0 +1,299 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/JQueryEasyUI1.2.2/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/JQueryEasyUI1.2.2/themes/icon.css" rel="stylesheet" />
+    <script src="~/Content/JQueryEasyUI1.2.2/jquery-1.4.4.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Content/JQueryEasyUI1.2.2/jquery.easyui.min.js"></script>
+    <script src="~/Content/JQueryEasyUI1.2.2/locale/easyui-lang-zh_CN.js"></script>
+    <script src="~/Scripts/MyAjaxForm.js"></script>
+    <script src="~/Scripts/datapattern.js"></script>
+    <script>
+        $(function () {
+            $("#addDv").css("display", 'none');
+            $("#setRole4ActionDv").css("display", 'none');
+            loadData()
+            onActionEnumTypeChange();
+            $("#btnUpLoadImg").click(function () {
+                $("#addActionInfoForm").ajaxSubmit({
+                    url: "/ActionInfo/ActionFileUpLoad",
+                    type: "post",
+                    dataType: "text",
+                    success: function (data) {
+                        var str = data.split(":");
+                        if (str[0] == "Y") {
+                            $("#ImgUpload").append("<img id='imgUpLoad' src='" + str[1] + "' width='50px' height='50px'/>");
+                            $("#MenuIcon").val(str[1]);
+                        }
+                        else {
+                            $.messager.alert("提示", "上传失败！")
+                        }
+                    }
+                })
+            })
+        });
+        function loadData() {
+            $('#tt').datagrid({
+                url: '/ActionInfo/GetActionInfo',
+                title: '权限信息表格',
+                width: 800,
+                height: 400,
+                fitColumns: true,
+                nowrap: false,
+                idField: 'ID',
+                loadMsg: '正在加载权限数据。。。。',
+                pagination: true,
+                singleSelect: false,
+                pageSize: 5,
+                pageNumber: 1,
+                pageList: [5, 10, 15],
+                queryParams: {},
+                columns: [[
+                    { field: 'ck', checkbox: true, align: 'left', width: 50 },
+                    { field: 'ID', title: '编号', width: 80 },
+                    { field: 'ActionInfoName', title: '权限名', width: 120 },
+                    { field: 'Url', title: '请求地址', width: 120 },
+                    { field: 'HttpMethod', title: '请求方式', width: 120 },
+                    { field: 'ActionTypeEnum', title: '权限类型', width: 120 },
+                    { field: 'Sort', title: '排序', width: 120 },
+                    { field: 'Remark', title: '备注', width: 120 },
+                    {
+                        field: 'SubTime', title: '时间', width: 100, align: 'right',
+                        formatter: function (value, row, index) {
+                            return (eval(value.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).pattern("yyyy-MM-dd ");
+                        }
+                    }
+                ]],
+                toolbar: [{
+                    id: 'btnadd',
+                    text: '添加',
+                    iconCls: 'icon-add',
+                    handler: function () {
+                        showAddDialog();
+                    }
+                }, {
+                    id: 'btncut',
+                    text: '删除',
+                    iconCls: 'icon-cancel',
+                    handler: function () {
+                        deleteRoleInfo();
+                    }
+                }, '-', {
+                    id: 'btnedit',
+                    text: '为权限分配角色',
+                    iconCls: 'icon-redo',
+                    handler: function () {
+                        setRole4Action();
+                    }
+                }]
+            })
+        }
+        function deleteRoleInfo() {
+            var selectRows = $("#tt").datagrid("getSelections");
+            if (selectRows.length != 0) {
+                $.messager.confirm("提示", "确定要删除吗？", function (i) {
+                    if (i) {
+                        var IDS = "";
+                        for (var i = 0; i < selectRows.length; i++) {
+                            IDS += selectRows[i].ID + ",";
+                        }
+                        IDS = IDS.substr(0, IDS.length - 1);
+                        $.post("/RoleInfo/DeleteRoleInfo", { "IDS": IDS }, function (data) {
+                            if (data == "Y") {
+                                $.messager.alert("提示", "删除成功！")
+                                $('#tt').datagrid('reload')
+                                $('#tt').datagrid("clearSelections")
+                            }
+                            else {
+                                $.messager.alert("提示", "删除失败！")
+                            }
+                        })
+                    }
+                })
+            }
+            else {
+                $.messager.alert("提示", "请选择需要删除的数据！")
+                return;
+            }
+        }
+        function showAddDialog() {
+            $("#addDv").css("display", "block");
+            $("#addDv").dialog({
+                title: '添加权限信息数据',
+                modal: true,
+                collapsible: true,
+                resizable: true,
+                buttons: [{
+                    text: '确认',
+                    iconCls: 'icon-ok',
+                    handler: function () {
+                        $("#addActionInfoForm").submit();
+                    }
+                }, {
+                    text: '取消',
+                    handler: function () {
+                        $('#addDv').dialog('close');
+                    }
+                }]
+            })
+        }
+        function afterAdd(data) {
+            if (data == 'Y') {
+                $.messager.alert("提示", "权限信息添加成功！")
+                $('#addDv').dialog('close')
+                $('#tt').datagrid('reload')
+                $("#addDv input").val("")
+                $("#imgUpLoad").remove()
+                $("#btnUpLoadImg").val("上传")
+                $("#MenuIcon").css("display","none")
+            }
+        }
+        function showEditDialog() {
+            var selectedRow = $("#tt").datagrid("getSelections");
+            if (selectedRow.length != 1) {
+                $.messager.alert("提示", "请选择一条需要修改的数据！")
+                return;
+            }
+            $("#editIframe").attr("src", "/RoleInfo/GetEditRoleInfo?ID=" + selectedRow[0].ID);
+            $("#editDv").css("display", "block");
+            $("#editIframe").css("display", "block");
+            $("#editDv").dialog({
+                title: '修改角色数据',
+                modal: true,
+                collapsible: true,
+                resizable: true,
+                buttons: [{
+                    text: '确认',
+                    iconCls: 'icon-ok',
+                    handler: function () {
+                        $("#editIframe")[0].contentWindow.submitSetRole4AcitonForm();
+                    }
+                }, {
+                    text: '取消',
+                    handler: function () {
+                        $('#editDv').dialog('close');
+                    }
+                }]
+            })
+            //})
+        }
+        function afterEdit(data) {
+            if (data == "Y") {
+                $.messager.alert("提示", "用户更新成功！")
+                $('#editDv').dialog('close');
+                $("#tt").datagrid("reload");
+            }
+        }
+        function ChangeDateFormat(cellval) {
+            var date = new Date(parseInt(cellval.replace("/Date(", "").replace(")/", ""), 10));
+            var month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
+            var currentDate = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+            return date.getFullYear() + "-" + month + "-" + currentDate;
+        }
+        function closeEditDiv() {
+            $('#editDv').dialog('close');
+        }
+        function onActionEnumTypeChange() {
+            $("#ActionTypeEnum").change(function () {
+                var value = $(this).val();
+                if (value == 1) {
+                    $("#ImgUpload").fadeIn();
+                }
+                if (value == 0) {
+                    $("#ImgUpload").fadeOut();
+                }
+            })
+        }
+        function setRole4Action() {
+            var selectedRow = $("#tt").datagrid("getSelections");
+            if (selectedRow.length != 1) {
+                $.messager.alert("提示", "请选择一条需要设置角色的权限信息！")
+                return;
+            }
+            $("#setRole4ActionIframe").attr("src", "/ActionInfo/ShowActionRoleInfo?ID=" + selectedRow[0].ID);
+            $("#setRole4ActionDv").css("display", "block");
+           // $("#setRole4ActionIframe").css("display", "block");
+            $("#setRole4ActionDv").dialog({
+                title: '为权限设置角色',
+                modal: true,
+                collapsible: true,
+                resizable: true,
+                buttons: [{
+                    text: '确认',
+                    iconCls: 'icon-ok',
+                    handler: function () {
+                         $("#setRole4ActionIframe")[0].contentWindow.submitSetRole4AcitonForm();
+                    }
+                }, {
+                    text: '取消',
+                    handler: function () {
+                        $('#setRole4ActionDv').dialog('close');
+                    }
+                }]
+            })
+        }
+        function afterSetRole4Action(data) {
+            if (data == "Y") {
+                $.messager.alert("提示","为权限设置角色成功！")
+                $('#setRole4ActionDv').dialog('close');
+            }
+            else {
+                $.messager.alert("提示","为权限设置角色失败！")
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <table id="tt"></table>
+    </div>
+    <div id="addDv" icon="icon-save" style="padding:1px;width:400px;height:420px;">
+        @using (Ajax.BeginForm("AddActionInfo", "ActionInfo", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterAdd" },
+                                  new { id = "addActionInfoForm" }))
+        {
+            <table>
+                <tr>
+                    <td><p style="font-size:14px">权限名：</p></td>
+                    <td><input type="text" name="ActionInfoName" /></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size:14px">请求地址：</p></td>
+                    <td><input type="text" name="Url" /></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size:14px">请求方式：</p></td>
+                    <td><select name="HttpMethod"><option value="GET">GET</option><option value="POST">POST</option></select></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size:14px">权限类型：</p></td>
+                    <td><select name="ActionTypeEnum" id="ActionTypeEnum"><option value="0">普通权限</option><option value="1">菜单权限</option></select></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <div id="ImgUpload" style="display:none"><input type="file" name="imgFile" /><input type="button" id="btnUpLoadImg" value="上传" /><br /></div>
+                        <input type="hidden" name="MenuIcon" id="MenuIcon" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><p style="font-size:14px">备注：</p></td>
+                    <td><input type="text" name="Remark" /></td>
+                </tr>
+                <tr>
+                    <td><p style="font-size:14px">排序：</p></td>
+                    <td><input type="text" name="Sort" /></td>
+                </tr>
+            </table>
+        }
+    </div>
+    <div id="setRole4ActionDv" icon="icon-save" style="padding:5px;width:350px;height:320px;">
+        <iframe id="setRole4ActionIframe"  frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    </div>
+</body>
+</html> 

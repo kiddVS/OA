@@ -1,0 +1,23 @@
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.DALFactory.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.DALFactory.pdb
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.DALFactory\obj\Debug\CUP.PE.OA.DALFactory.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.DALFactory\obj\Debug\CUP.PE.OA.DALFactory.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.DALFactory.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.DALFactory.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.DAL.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.IDAL.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.Model.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\EntityFramework.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.DAL.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.IDAL.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.Model.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\CUP.PE.OA.Model.dll.config
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\EntityFramework.xml
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\obj\Debug\CUP.PE.OA.DALFactory.csprojResolveAssemblyReference.cache
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\obj\Debug\CUP.PE.OA.DALFactory.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\obj\Debug\CUP.PE.OA.DALFactory.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.DALFactory\bin\Debug\Newtonsoft.Json.xml

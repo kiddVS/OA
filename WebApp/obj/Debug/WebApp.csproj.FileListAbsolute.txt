@@ -1,0 +1,201 @@
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\ApplicationInsights.config
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\csc.exe
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\csc.exe.config
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\csc.rsp
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\csi.exe
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\csi.rsp
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\System.AppContext.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\System.Collections.Immutable.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\System.IO.FileSystem.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\vbc.exe
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\vbc.exe.config
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\vbc.rsp
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\VBCSCompiler.exe
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\roslyn\VBCSCompiler.exe.config
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\WebApp.dll.config
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\WebApp.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\WebApp.pdb
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Antlr3.Runtime.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.AI.Web.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.AI.WindowsServer.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.ApplicationInsights.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.Web.Infrastructure.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Newtonsoft.Json.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.Helpers.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.Mvc.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.Optimization.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.Razor.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.WebPages.Deployment.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.WebPages.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.WebPages.Razor.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\WebGrease.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.Helpers.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.Mvc.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.Optimization.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.Razor.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.WebPages.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.WebPages.Deployment.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\System.Web.WebPages.Razor.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Antlr3.Runtime.pdb
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Newtonsoft.Json.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.ApplicationInsights.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.AI.WindowsServer.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\Microsoft.AI.Web.xml
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.Helpers.resources.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.Mvc.resources.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.Optimization.resources.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.Razor.resources.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.WebPages.resources.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\obj\Debug\WebApp.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\WebApp\obj\Debug\WebApp.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\ApplicationInsights.config
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\WebApp.dll.config
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\WebApp.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\WebApp.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Antlr3.Runtime.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.AI.Web.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Newtonsoft.Json.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.Helpers.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.Mvc.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.Optimization.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.Razor.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.WebPages.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\WebGrease.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.Helpers.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.Mvc.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.Optimization.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.Razor.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.WebPages.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Antlr3.Runtime.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Newtonsoft.Json.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Microsoft.AI.Web.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\obj\Debug\WebApp.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\obj\Debug\WebApp.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.BLL.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.IBLL.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.Model.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.IDAL.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.DALFactory.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\EntityFramework.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.DAL.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.BLL.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.IBLL.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.Model.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.Model.dll.config
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.IDAL.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.DALFactory.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\EntityFramework.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.DAL.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\csc.exe
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\csc.exe.config
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\csc.rsp
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\csi.exe
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\csi.rsp
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\System.AppContext.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\vbc.exe
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\vbc.exe.config
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\vbc.rsp
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Config\controllers.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Common.Logging.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Core.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Web.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Web.Extensions.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Web.Mvc4.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.Http.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Web.Http.WebHost.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\System.Net.Http.Formatting.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Core.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Core.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Web.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Web.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Web.Extensions.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Web.Extensions.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Web.Mvc4.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Spring.Web.Mvc4.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\log4net.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.Common.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\CUP.PE.OA.Common.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Memcached.ClientLibrary.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Memcached.ClientLibrary.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Dict\ChsDoubleName1.txt
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Dict\ChsDoubleName2.txt
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Dict\ChsSingleName.txt
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Dict\Stopword.txt
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Dict\Synonym.txt
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Dict\Wildcard.txt
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Dict\Dict.dct
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Config\services.xml
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\Lucene.Net.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\PanGu.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\PanGu.Lucene.Analyzer.dll
+C:\Users\chang\Desktop\CUP.PE.OA\WebApp\bin\PanGu.HighLight.dll

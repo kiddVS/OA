@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+@using CUP.PE.OA.Model;
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SetUserRole</title>
+    <script src="~/Content/JQueryEasyUI1.2.2/jquery-1.4.4.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript">
+        function submitSetRoleForm() {
+            $("#setUserRoleForm").submit();
+        }
+        function afterSetUserRole(data) {
+            window.parent.afterSetUserInfo(data);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        为用户 @{ UserInfo user = ViewBag.UserInfo as UserInfo;
+            List<int> userRoleInfo = ViewBag.UserRoleInfo;
+            List<RoleInfo> allRoleInfo = ViewBag.AllRoleInfo;
+            @user.UName} 设置角色信息<br />
+        @using (Ajax.BeginForm("SetRoleExecute", "UserInfo", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterSetUserRole" },
+            new { id = "setUserRoleForm" }))
+        {
+            <input type="hidden" name="ID" value="@user.ID" />
+            foreach (var item in allRoleInfo)
+            {
+                string checkName = "pe_" + item.ID;
+                if (userRoleInfo.Contains(item.ID))
+                {
+                    <input type="checkbox" checked="checked" value="@item.ID" name="@checkName"><span style="font-size:14px">@item.RoleName</span><br />
+                }
+                else
+                {
+                    <input type="checkbox" value="@item.ID" name="@checkName"><span style="font-size:14px">@item.RoleName</span><br />
+                }
+            }
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\CUP.PE.OA.IBLL.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\CUP.PE.OA.IBLL.pdb
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.IBLL\obj\Debug\CUP.PE.OA.IBLL.csprojResolveAssemblyReference.cache
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.IBLL\obj\Debug\CUP.PE.OA.IBLL.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.IBLL\obj\Debug\CUP.PE.OA.IBLL.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\CUP.PE.OA.IBLL.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\CUP.PE.OA.IBLL.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\CUP.PE.OA.IDAL.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\CUP.PE.OA.Model.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\EntityFramework.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\CUP.PE.OA.IDAL.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\CUP.PE.OA.Model.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\CUP.PE.OA.Model.dll.config
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\EntityFramework.xml
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\obj\Debug\CUP.PE.OA.IBLL.csprojResolveAssemblyReference.cache
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\obj\Debug\CUP.PE.OA.IBLL.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\obj\Debug\CUP.PE.OA.IBLL.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.IBLL\bin\Debug\Newtonsoft.Json.xml

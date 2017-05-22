@@ -1,0 +1,19 @@
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\CUP.PE.OA.Common.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\CUP.PE.OA.Common.pdb
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Common\obj\Debug\CUP.PE.OA.Common.csprojResolveAssemblyReference.cache
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Common\obj\Debug\CUP.PE.OA.Common.dll
+c:\users\chang\documents\visual studio 2017\Projects\CUP.PE.OA\CUP.PE.OA.Common\obj\Debug\CUP.PE.OA.Common.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\CUP.PE.OA.Common.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\CUP.PE.OA.Common.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\obj\Debug\CUP.PE.OA.Common.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\obj\Debug\CUP.PE.OA.Common.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\obj\Debug\CUP.PE.OA.Common.csprojResolveAssemblyReference.cache
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\Commons.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\log4net.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\Memcached.ClientLibrary.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\Memcached.ClientLibrary.pdb
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\Newtonsoft.Json.xml
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\PanGu.dll
+C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Common\bin\Debug\PanGu.HighLight.dll

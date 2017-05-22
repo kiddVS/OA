@@ -1,0 +1,111 @@
+﻿
+@{
+    Layout = null;
+}
+@using System.Web.Mvc.Html
+<!DOCTYPE html>
+@using WebApp.Models;
+@{ List<BookSearchModel> searchModelList = ViewBag.SearchModelList; }
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        .search-text2 {
+            display: block;
+            width: 690px;
+            height: 26px;
+            line-height: 26px;
+            float: left;
+            margin: 3px 5px;
+            border: 1px solid gray;
+            outline: none;
+            font-family: 'Microsoft Yahei';
+            font-size: 14px;
+        }
+
+        .search-btn2 {
+            width: 102px;
+            height: 32px;
+            line-height: 32px;
+            cursor: pointer;
+            border: 0px;
+            background-color: #d6000f;
+            font-family: 'Microsoft Yahei';
+            font-size: 16px;
+            color: #f3f3f3;
+        }
+
+        .con-l {
+            width: 820px; /*overflow:hidden;*/
+            float: left;
+        }
+
+        .search-list-con {
+            width: 100%;
+            background-color: #fff;
+            overflow: hidden;
+            margin-top: 0px;
+            padding-bottom: 15px;
+            padding-top: 5px;
+        }
+        .search-list {
+            width: 780px;
+            overflow: hidden;
+            margin: 30px 20px 10px 20px;
+        }
+            .search-list dt {
+                font-family: 'Microsoft Yahei';
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 7px;
+                font-weight: normal;
+            }
+            .search-list .search-detail {
+                font-size: 14px;
+                color: #666666;
+                margin-bottom: 5px;
+                font-family: microsoft yahei;
+                line-height: 22px;
+                overflow: hidden;
+            }
+            .search-list dt a {
+                color: #2981a9
+               
+            }
+        a:link, a:visited {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #cc0000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="con-l">
+        @using (Html.BeginForm("BookInfoSearch", "BookInfo",FormMethod.Get))
+        {
+            <input type="text" name="searchWord" class="search-text2" /><input type="submit" value="搜一搜" name="search" class="search-btn2" />@*<input type="submit" name="saveData" value="创建索引" />*@
+        }
+        <div class="search-list-con csdn-tracking-statistics">
+            @{
+
+                if (searchModelList != null)
+                {
+                    foreach (var item in searchModelList)
+                    {
+                        <dl class="search-list">
+                        <dt><a href="/BookInfo/BookDetail?ID=@item.Id">@item.Title</a></dt>
+                        <dd class="search-detail course_search_detail"> @MvcHtmlString.Create(item.ContenDescription)</dd>
+                        </dl>
+                    }
+                }
+            }
+        </div>
+    </div>
+
+</body>
+</html>
