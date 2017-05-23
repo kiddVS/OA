@@ -18,9 +18,13 @@ namespace CUP.PE.OA.IDAL
 	
 		IDepartmentDAL DepartmentDAL{get;set;}
 	
+		IKeyWordsRankDAL KeyWordsRankDAL{get;set;}
+	
 		IR_UserInfo_ActionInfoDAL R_UserInfo_ActionInfoDAL{get;set;}
 	
 		IRoleInfoDAL RoleInfoDAL{get;set;}
+	
+		ISearchDetailsDAL SearchDetailsDAL{get;set;}
 	
 		IUserInfoDAL UserInfoDAL{get;set;}
         DbContext Db { get; }

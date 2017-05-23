@@ -22,3 +22,16 @@ C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.pdb
 C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.csprojResolveAssemblyReference.cache
 C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\Newtonsoft.Json.dll
 C:\Users\chang\Desktop\CUP.PE.OA\CUP.PE.OA.Model\bin\Debug\Newtonsoft.Json.xml
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\bin\Debug\CUP.PE.OA.Model.dll.config
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\bin\Debug\CUP.PE.OA.Model.dll
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\bin\Debug\CUP.PE.OA.Model.pdb
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.dll
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\bin\Debug\Newtonsoft.Json.dll
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.xml
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\bin\Debug\Newtonsoft.Json.xml
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.csprojResolveAssemblyReference.cache
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.dll
+D:\Code\MyGitHub\OA\CUP.PE.OA.Model\obj\Debug\CUP.PE.OA.Model.pdb

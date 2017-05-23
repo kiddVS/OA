@@ -47,6 +47,16 @@ namespace CUP.PE.OA.DALFactory
             return GetObjectInstance(fullClassName) as IDepartmentDAL;
         }
 		
+	    public static IKeyWordsRankDAL GetKeyWordsRankInstance()
+        {
+
+            string fullClassName = _nameSpace + ".KeyWordsRankDAL";
+
+
+            //object obj = Assembly.Load(ConfigurationManager.AppSettings["DalAssembly"]).CreateInstance(classFulleName, true);
+            return GetObjectInstance(fullClassName) as IKeyWordsRankDAL;
+        }
+		
 	    public static IR_UserInfo_ActionInfoDAL GetR_UserInfo_ActionInfoInstance()
         {
 
@@ -65,6 +75,16 @@ namespace CUP.PE.OA.DALFactory
 
             //object obj = Assembly.Load(ConfigurationManager.AppSettings["DalAssembly"]).CreateInstance(classFulleName, true);
             return GetObjectInstance(fullClassName) as IRoleInfoDAL;
+        }
+		
+	    public static ISearchDetailsDAL GetSearchDetailsInstance()
+        {
+
+            string fullClassName = _nameSpace + ".SearchDetailsDAL";
+
+
+            //object obj = Assembly.Load(ConfigurationManager.AppSettings["DalAssembly"]).CreateInstance(classFulleName, true);
+            return GetObjectInstance(fullClassName) as ISearchDetailsDAL;
         }
 		
 	    public static IUserInfoDAL GetUserInfoInstance()

@@ -4,6 +4,7 @@ using CUP.PE.OA.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,12 @@ namespace CUP.PE.OA.DALFactory
         public bool SaveChanges()
         {
             return Db.SaveChanges() > 0;
+        }
+        //执行sql的DB方法
+       
+        public int ExecuteSql( string sql,params SqlParameter[] sqlParas)
+        {
+           return  Db.Database.ExecuteSqlCommand(sql, sqlParas);
         }
     }
 }

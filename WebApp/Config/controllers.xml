@@ -18,7 +18,10 @@
   </object>
   <object type="WebApp.Controllers.BookInfoController, WebApp" singleton="false" >
     <property name="BooksService" ref="BooksService" />
+    <property name="KeyWordsRankService" ref="KeyWordsRankService" />
+    <property name="SearchDetailsService" ref="SearchDetailsService" />
   </object>
+ 
   <!--<object name="UserInfoService" type="CUP.PE.OA.BLL.UserInfoService,CUP.PE.OA.BLL" singleton="false" >    
   </object>-->  
   <!--intentionally do NOT register the AccountController or the ValuesController with the container; demonstrates that the underlying

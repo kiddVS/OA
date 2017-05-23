@@ -10,6 +10,16 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.8.20.min.js"></script>
+    <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript" >
+        $(function () {
+            $("#searchWord").autocomplete({
+                source: "/BookInfo/AutoComplete"
+            });
+        });
+    </script>
     <style type="text/css">
         .search-text2 {
             display: block;
@@ -82,13 +92,16 @@
             color: #cc0000;
             text-decoration: none;
         }
+        .ui-autocomplete-loading {
+            background: white url('/Content/images/ui-anim_basic_16x16.gif') right center no-repeat;
+        }
     </style>
 </head>
 <body>
     <div class="con-l">
         @using (Html.BeginForm("BookInfoSearch", "BookInfo",FormMethod.Get))
         {
-            <input type="text" name="searchWord" class="search-text2" /><input type="submit" value="搜一搜" name="search" class="search-btn2" />@*<input type="submit" name="saveData" value="创建索引" />*@
+            <input type="text" name="searchWord" class="search-text2" id="searchWord"/><input type="submit" value="搜一搜" name="search" class="search-btn2" />@*<input type="submit" name="saveData" value="创建索引" />*@
         }
         <div class="search-list-con csdn-tracking-statistics">
             @{

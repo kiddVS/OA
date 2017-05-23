@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUP.PE.OA.DAL", "CUP.PE.OA.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{71AC7EFA-9790-49E0-B434-F182A3B4B561}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUP.OA.PE.QuartzTask", "CUP.OA.PE.QuartzTask\CUP.OA.PE.QuartzTask.csproj", "{C973A676-2AA1-4F39-8E2B-83A130637C04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{71AC7EFA-9790-49E0-B434-F182A3B4B561}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71AC7EFA-9790-49E0-B434-F182A3B4B561}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71AC7EFA-9790-49E0-B434-F182A3B4B561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C973A676-2AA1-4F39-8E2B-83A130637C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C973A676-2AA1-4F39-8E2B-83A130637C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C973A676-2AA1-4F39-8E2B-83A130637C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C973A676-2AA1-4F39-8E2B-83A130637C04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

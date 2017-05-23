@@ -17,6 +17,8 @@
         <AssociationConnector Association="OAModel.UserInfoDepartment" />
         <AssociationConnector Association="OAModel.UserInfoRoleInfo" />
         <EntityTypeShape EntityType="OAModel.Books" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="OAModel.KeyWordsRank" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OAModel.SearchDetails" Width="1.5" PointX="2.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

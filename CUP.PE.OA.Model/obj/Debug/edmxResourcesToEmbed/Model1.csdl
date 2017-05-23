@@ -47,6 +47,8 @@
       <End Role="UserInfo" EntitySet="UserInfo" />
     </AssociationSet>
     <EntitySet Name="Books" EntityType="OAModel.Books" />
+    <EntitySet Name="KeyWordsRank" EntityType="OAModel.KeyWordsRank" />
+    <EntitySet Name="SearchDetails" EntityType="OAModel.SearchDetails" />
   </EntityContainer>
   <EntityType Name="ActionInfo">
     <Key>
@@ -167,5 +169,21 @@
     <Property Name="TOC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="CategoryId" Type="Int32" />
     <Property Name="Clicks" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KeyWordsRank">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="KeyWords" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SearchCount" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SearchDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="KeyWords" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SearchDateTime" Type="DateTime" Precision="3" />
   </EntityType>
 </Schema>

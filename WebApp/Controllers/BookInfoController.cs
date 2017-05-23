@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 using WebApp.Models;
@@ -20,7 +21,9 @@ namespace WebApp.Controllers
     public class BookInfoController : Controller
     {
         public IBooksService BooksService { get; set; }
+        public ISearchDetailsService SearchDetailsService { get; set; }
         // GET: BookInfo
+        public IKeyWordsRankService KeyWordsRankService { get; set; }
         public ActionResult Index()
         {
             return View();
@@ -114,7 +117,18 @@ namespace WebApp.Controllers
                 //this.listBox1.Items.Add("-----------------------\n");
                 bookSearchModelList.Add(searchModel);
             }
+            //将搜索的此插入词库之中
+            SearchDetails entity = new SearchDetails() { Id =Guid.NewGuid(), KeyWords = searchWords, SearchDateTime = DateTime.Now };
+            SearchDetailsService.AddEntity(entity);
             return bookSearchModelList;
+        }
+        public ActionResult AutoComplete()
+        {
+           // Thread.Sleep(5000);
+            string word = Request["term"];
+            List<string> hotWords = new List<string>();
+            hotWords = KeyWordsRankService.LoadEntities(u => u.KeyWords.StartsWith(word)).Select< KeyWordsRank,string>(u=>u.KeyWords).ToList();
+            return Json(hotWords, JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -57,6 +57,20 @@ namespace CUP.PE.OA.DALFactory
             set { _DepartmentDAL = value; }
         }
 	
+		private IKeyWordsRankDAL _KeyWordsRankDAL;
+        public IKeyWordsRankDAL KeyWordsRankDAL
+        {
+            get
+            {
+                if(_KeyWordsRankDAL == null)
+                {
+                    _KeyWordsRankDAL = AbstractFactory.GetKeyWordsRankInstance();;
+                }
+                return _KeyWordsRankDAL;
+            }
+            set { _KeyWordsRankDAL = value; }
+        }
+	
 		private IR_UserInfo_ActionInfoDAL _R_UserInfo_ActionInfoDAL;
         public IR_UserInfo_ActionInfoDAL R_UserInfo_ActionInfoDAL
         {
@@ -83,6 +97,20 @@ namespace CUP.PE.OA.DALFactory
                 return _RoleInfoDAL;
             }
             set { _RoleInfoDAL = value; }
+        }
+	
+		private ISearchDetailsDAL _SearchDetailsDAL;
+        public ISearchDetailsDAL SearchDetailsDAL
+        {
+            get
+            {
+                if(_SearchDetailsDAL == null)
+                {
+                    _SearchDetailsDAL = AbstractFactory.GetSearchDetailsInstance();;
+                }
+                return _SearchDetailsDAL;
+            }
+            set { _SearchDetailsDAL = value; }
         }
 	
 		private IUserInfoDAL _UserInfoDAL;

@@ -28,12 +28,22 @@ namespace CUP.PE.OA.DAL
 
     }
 		
+	public partial class KeyWordsRankDAL :BaseDAL<KeyWordsRank>,IKeyWordsRankDAL
+    {
+
+    }
+		
 	public partial class R_UserInfo_ActionInfoDAL :BaseDAL<R_UserInfo_ActionInfo>,IR_UserInfo_ActionInfoDAL
     {
 
     }
 		
 	public partial class RoleInfoDAL :BaseDAL<RoleInfo>,IRoleInfoDAL
+    {
+
+    }
+		
+	public partial class SearchDetailsDAL :BaseDAL<SearchDetails>,ISearchDetailsDAL
     {
 
     }

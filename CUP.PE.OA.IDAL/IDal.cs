@@ -25,12 +25,22 @@ namespace CUP.PE.OA.IDAL
       
     }
 	
+	public partial interface IKeyWordsRankDAL :IBaseDAL<KeyWordsRank>
+    {
+      
+    }
+	
 	public partial interface IR_UserInfo_ActionInfoDAL :IBaseDAL<R_UserInfo_ActionInfo>
     {
       
     }
 	
 	public partial interface IRoleInfoDAL :IBaseDAL<RoleInfo>
+    {
+      
+    }
+	
+	public partial interface ISearchDetailsDAL :IBaseDAL<SearchDetails>
     {
       
     }

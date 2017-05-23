@@ -23,6 +23,12 @@
   <object name="BooksService" type="CUP.PE.OA.BLL.BooksService,CUP.PE.OA.BLL" singleton="false" >
 
   </object>
+  <object name="KeyWordsRankService" type="CUP.PE.OA.BLL.KeyWordsRankService,CUP.PE.OA.BLL" singleton="false" >
+
+  </object>
+  <object name="SearchDetailsService" type="CUP.PE.OA.BLL.SearchDetailsService,CUP.PE.OA.BLL" singleton="false" >
+
+  </object>
   <!--intentionally do NOT register the AccountController or the ValuesController with the container; demonstrates that the underlying
   default controller factory will properly (attempt to!) resolve all controllers not registered with Spring.NET
   using its default controller resolution behavoir-->

@@ -37,6 +37,14 @@ namespace CUP.PE.OA.BLL
         }
     }   
 	
+	public partial class KeyWordsRankService :BaseService<KeyWordsRank>,IKeyWordsRankService
+    {
+        public override void SetCurrentDAL()
+        {
+            CurrentDAL =this.CurrentDBSession.KeyWordsRankDAL;
+        }
+    }   
+	
 	public partial class R_UserInfo_ActionInfoService :BaseService<R_UserInfo_ActionInfo>,IR_UserInfo_ActionInfoService
     {
         public override void SetCurrentDAL()
@@ -50,6 +58,14 @@ namespace CUP.PE.OA.BLL
         public override void SetCurrentDAL()
         {
             CurrentDAL =this.CurrentDBSession.RoleInfoDAL;
+        }
+    }   
+	
+	public partial class SearchDetailsService :BaseService<SearchDetails>,ISearchDetailsService
+    {
+        public override void SetCurrentDAL()
+        {
+            CurrentDAL =this.CurrentDBSession.SearchDetailsDAL;
         }
     }   
 	
